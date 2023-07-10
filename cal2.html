@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="./cal2.js"></script>
+    <link rel="stylesheet" href="cal2.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <h1>Calculadora</h1>
+        <div class="visor" id="visor">
+            <p class="tela" id="vaccount"> </p>
+            <p class="tela" id="vresult"> </p>
+        </div>
+        <div class="row">
+
+            <button onclick="clean()">c</button>
+            <button onclick="update('()')" value="()">()</button>
+            <button onclick="update('%')" value="%">%</button>
+            <button onclick="update('/')" value="/">/</button>
+        </div>
+
+        <div class="row">
+            <button onclick="update(7)" value="7">7</button>
+            <button onclick="update(8)" value="8">8</button>
+            <button onclick="update(9)" value="9">9</button>
+            <button onclick="update('*')" value="*">*</button>
+        </div>
+
+        <div class="row">
+            <button onclick="update(4)" value="4">4</button>
+            <button onclick="update(5)" value="5">5</button>
+            <button onclick="update(6)" value="6">6</button>
+            <button onclick="update('-')" value="-">-</button>
+        </div>
+
+        <div class="row">
+            <button onclick="update(1)" value="1">1</button>
+            <button onclick="update(2)" value="2">2</button>
+            <button onclick="update(3)" value="3">3</button>
+            <button onclick="update('+')" value="+">+</button>
+        </div>
+
+
+        <div class="row">
+            <button value=""> </button>
+            <button onclick="update(0)" value="0">0</button>
+            <button onclick="update(',')" value=",">,</button>
+            <button onclick="update('=')" value="=">=</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
